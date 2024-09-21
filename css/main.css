@@ -1,16 +1,30 @@
 body {
   font-family: 'Roboto', Helvetica, sans-serif;
-  background-color: grey;
+  background-color: rgb(255, 255, 255);
   margin: 0;
   padding: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.skip-links-one {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.skip-links-one a {
+  position: absolute;
+  top: -3em;
+  background-color: black;    
+  color:white;
+  padding: .5em 1em;
+  font-weight: bold;
+}
+
+.skip-links-one a:focus {
+  top: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
   font-family: 'Stick No Bills', 'Roboto', Helvetica, sans-serif;
 }
 
@@ -44,8 +58,7 @@ img {
   font-size: 1.25rem;
 }
 
-form input,
-form textarea {
+form input,form textarea {
   display: block;
   width: 100%;
   margin-bottom: 1rem;
@@ -69,3 +82,60 @@ form button {
 .site-footer {
   padding: 2rem 0;
 }
+
+.skip-links-two {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.skip-links-two a {
+  position: absolute;
+  bottom: 0;
+  background-color: black;    
+  color:white;
+  padding: .5em 1em;
+  font-weight: bold;
+  width: 81px;
+}
+
+@media screen and (min-width: 1167px) and (max-width: 1536px) {
+  .skip-links-two a {
+    position: absolute;
+    bottom: -413px;
+    left: 0;
+  }
+}
+
+@media screen and (min-width: 897px) and (max-width: 1167px) {
+  .skip-links-two a {
+    position: absolute;
+    bottom: -430px;
+    left: 0;
+  }
+}
+
+@media screen and (min-width: 625px) and (max-width: 653px) {
+  .skip-links-two a {
+    position: absolute;
+    bottom: -488px;
+    left: 0;
+  }
+}
+
+@media screen and (min-width: 515px) and (max-width: 625px) {
+  .skip-links-two a {
+    position: absolute;
+    bottom: -507px;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 515px) {
+  .skip-links-two a {
+    position: absolute;
+    bottom: -526px;
+    left: 0;
+  }
+}
+
