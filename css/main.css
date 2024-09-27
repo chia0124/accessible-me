@@ -5,13 +5,13 @@ body {
   padding: 0;
 }
 
-.skip-links-one {
+.skip-links {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.skip-links-one a {
+.skip-links a {
   position: absolute;
   top: -3em;
   background-color: black;    
@@ -20,7 +20,7 @@ body {
   font-weight: bold;
 }
 
-.skip-links-one a:focus {
+.skip-links a:focus {
   top: 0;
 }
 
@@ -83,59 +83,22 @@ form button {
   padding: 2rem 0;
 }
 
-.skip-links-two {
+.return {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.skip-links-two a {
-  position: absolute;
+.return a {
+  position: fixed;
   bottom: 0;
+  left: -10em;
   background-color: black;    
   color:white;
   padding: .5em 1em;
   font-weight: bold;
-  width: 81px;
 }
 
-@media screen and (min-width: 1167px) and (max-width: 1536px) {
-  .skip-links-two a {
-    position: absolute;
-    bottom: -413px;
-    left: 0;
-  }
+.return a:focus {
+  left: 0;
 }
-
-@media screen and (min-width: 897px) and (max-width: 1167px) {
-  .skip-links-two a {
-    position: absolute;
-    bottom: -430px;
-    left: 0;
-  }
-}
-
-@media screen and (min-width: 625px) and (max-width: 653px) {
-  .skip-links-two a {
-    position: absolute;
-    bottom: -488px;
-    left: 0;
-  }
-}
-
-@media screen and (min-width: 515px) and (max-width: 625px) {
-  .skip-links-two a {
-    position: absolute;
-    bottom: -507px;
-    left: 0;
-  }
-}
-
-@media screen and (max-width: 515px) {
-  .skip-links-two a {
-    position: absolute;
-    bottom: -526px;
-    left: 0;
-  }
-}
-
